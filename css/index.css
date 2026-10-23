@@ -1,0 +1,2554 @@
+.header > .container > .row {
+	align-items: center;
+}
+
+.header__logo {
+	padding: 22px 0;
+}
+
+.header__menu {
+	padding: 18px 0;
+}
+
+.header__nav__option {
+	padding: 22px 0;
+}
+
+.header__menu.mobile-menu > ul.header__menu__catalog {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 10px 8px;
+}
+
+.header__menu.mobile-menu > ul.header__menu__catalog > li {
+	margin-right: 0;
+}
+
+.header__menu.mobile-menu > ul.header__menu__catalog > li > a {
+	font-size: 12px;
+	font-weight: 800;
+	text-transform: none;
+	letter-spacing: 0.04em;
+	padding: 11px 14px;
+	border-radius: 999px;
+	border: 1px solid transparent;
+	line-height: 1.1;
+}
+
+.header__menu.mobile-menu > ul.header__menu__catalog > li > a:after {
+	display: none;
+}
+
+.header__menu.mobile-menu > ul.header__menu__catalog > li.active > a {
+	background: #111111;
+	border-color: #111111;
+	color: #ffffff;
+	box-shadow: 0 14px 24px rgba(17, 17, 17, 0.14);
+}
+
+.header__menu.mobile-menu > ul.header__menu__catalog > li > a:hover {
+	background: #f7efe7;
+	border-color: #ead9cf;
+	color: #111111;
+}
+
+.header__menu.mobile-menu > ul.header__menu__catalog > li.active > a:hover {
+	color: #ffffff;
+}
+
+.header__menu.mobile-menu > ul.header__menu__catalog > li .dropdown {
+	left: 50%;
+	top: calc(100% + 18px);
+	width: auto;
+	min-width: 250px;
+	padding: 12px 0;
+	border-radius: 22px;
+	transform: translateX(-50%);
+	background: #111111;
+	box-shadow: 0 20px 40px rgba(17, 17, 17, 0.18);
+}
+
+.header__menu.mobile-menu > ul.header__menu__catalog > li:hover .dropdown {
+	top: calc(100% + 10px);
+}
+
+.header__menu.mobile-menu > ul.header__menu__catalog > li .dropdown li a {
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+	text-transform: none;
+	padding: 10px 22px;
+	white-space: nowrap;
+}
+
+.header__menu.mobile-menu > ul.header__menu__catalog > li .dropdown li a:hover {
+	background: rgba(255, 255, 255, 0.08);
+	color: #ffffff;
+}
+
+@media only screen and (max-width: 1199px) {
+	.header__menu.mobile-menu > ul.header__menu__catalog > li > a {
+		padding: 10px 12px;
+		letter-spacing: 0.1em;
+	}
+}
+
+.hero__items--brand {
+	position: relative;
+	height: auto;
+	padding: 180px 0 96px;
+	background: linear-gradient(135deg, #f8f9fc 0%, #eef2f8 100%);
+	background:
+		radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.24), transparent 32%),
+		linear-gradient(135deg, color-mix(in srgb, var(--hero-accent) 18%, #ffffff) 0%, #f8f9fc 42%, color-mix(in srgb, var(--hero-accent) 14%, #eef2f8) 100%);
+	overflow: hidden;
+}
+
+.hero__items--brand:before,
+.hero__items--brand:after {
+	position: absolute;
+	content: "";
+	border-radius: 50%;
+	background: color-mix(in srgb, var(--hero-accent) 18%, transparent);
+	filter: blur(6px);
+}
+
+.hero__items--brand:before {
+	left: -80px;
+	top: 70px;
+	width: 240px;
+	height: 240px;
+}
+
+.hero__items--brand:after {
+	right: -90px;
+	bottom: 60px;
+	width: 260px;
+	height: 260px;
+}
+
+.hero__brand-shell {
+	position: relative;
+	z-index: 2;
+}
+
+.hero__text--brand {
+	max-width: 560px;
+}
+
+.hero__text--brand h6 {
+	color: var(--hero-accent);
+}
+
+.hero__text--brand h2 {
+	font-size: 58px;
+	line-height: 1.02;
+	margin-bottom: 22px;
+}
+
+.hero__text--brand p {
+	max-width: 520px;
+	margin-bottom: 24px;
+	color: #4f586f;
+	font-size: 17px;
+	line-height: 1.8;
+}
+
+.hero__brand__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 14px;
+	margin-bottom: 20px;
+}
+
+.hero__brand__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 160px;
+	height: 46px;
+	padding: 0 18px;
+	border-radius: 999px;
+	border: 1px solid rgba(32, 36, 61, 0.12);
+	background: rgba(255, 255, 255, 0.78);
+	color: #20243d;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	backdrop-filter: blur(8px);
+}
+
+.hero__brand__link:hover {
+	background: #20243d;
+	color: #ffffff;
+}
+
+.hero__brand__stats {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.hero__brand__stats span {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 34px;
+	padding: 0 14px;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.78);
+	border: 1px solid rgba(32, 36, 61, 0.08);
+	color: #20243d;
+	font-size: 11px;
+	font-weight: 800;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.hero__brand__media {
+	position: relative;
+	padding-left: 34px;
+}
+
+.hero__brand__logo {
+	display: inline-flex;
+	margin-bottom: 18px;
+	padding: 10px 12px;
+	border-radius: 22px;
+	background: rgba(12, 16, 26, 0.88);
+	box-shadow: 0 20px 44px rgba(22, 28, 49, 0.16);
+}
+
+.hero__brand__logo svg {
+	display: block;
+	width: 236px;
+	height: auto;
+}
+
+.hero__brand__card {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 18px 18px 18px 22px;
+	border-radius: 28px;
+	background: rgba(255, 255, 255, 0.86);
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(12px);
+	box-shadow: 0 24px 54px rgba(22, 28, 49, 0.14);
+}
+
+.hero__brand__card--main {
+	min-height: 260px;
+}
+
+.hero__brand__card img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.hero__brand__card--main img {
+	width: 52%;
+	max-height: 220px;
+}
+
+.hero__brand__card__copy {
+	flex: 1 1 auto;
+}
+
+.hero__brand__card__copy small {
+	display: block;
+	margin-bottom: 8px;
+	color: var(--hero-accent);
+	font-size: 11px;
+	font-weight: 800;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+}
+
+.hero__brand__card__copy h3 {
+	margin: 0 0 10px;
+	color: #20243d;
+	font-size: 28px;
+	font-weight: 900;
+	line-height: 1.12;
+}
+
+.hero__brand__card__copy p {
+	margin-bottom: 14px;
+	color: #65708a;
+	font-size: 14px;
+	line-height: 1.75;
+}
+
+.hero__brand__price {
+	display: inline-flex;
+	align-items: center;
+	height: 34px;
+	padding: 0 14px;
+	border-radius: 999px;
+	background: color-mix(in srgb, var(--hero-accent) 12%, #ffffff);
+	color: #20243d;
+	font-size: 13px;
+	font-weight: 900;
+}
+
+.hero__brand__thumbs {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 14px;
+	margin-top: 16px;
+}
+
+.hero__brand__thumb {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 14px;
+	border-radius: 22px;
+	background: rgba(255, 255, 255, 0.76);
+	border: 1px solid rgba(255, 255, 255, 0.72);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 18px 34px rgba(22, 28, 49, 0.1);
+}
+
+.hero__brand__thumb img {
+	width: 78px;
+	height: 78px;
+	padding: 8px;
+	border-radius: 18px;
+	background: #f7f9fc;
+	object-fit: contain;
+}
+
+.hero__brand__thumb strong {
+	display: block;
+	margin-bottom: 6px;
+	color: #20243d;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 1.35;
+}
+
+.hero__brand__thumb span {
+	display: block;
+	color: #6e7790;
+	font-size: 11px;
+	font-weight: 700;
+}
+
+.home-welcome-section {
+	padding: 0 0 8px;
+	background: #f7f8fc;
+}
+
+.home-welcome {
+	padding: 32px 34px;
+	border-radius: 30px;
+	background: linear-gradient(135deg, #ffffff 0%, #f4f6fb 100%);
+	border: 1px solid #ebedf4;
+	box-shadow: 0 22px 48px rgba(33, 40, 74, 0.08);
+}
+
+.home-welcome__identity {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	margin-bottom: 24px;
+}
+
+.home-welcome__logo {
+	display: block;
+	width: 178px;
+	height: auto;
+	flex: 0 0 auto;
+	border-radius: 24px;
+	box-shadow: 0 18px 36px rgba(33, 40, 74, 0.1);
+}
+
+.home-welcome__copy span {
+	display: block;
+	margin-bottom: 10px;
+	color: #d18a32;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+.home-welcome__copy h2 {
+	margin: 0 0 12px;
+	color: #20243d;
+	font-size: 42px;
+	font-weight: 900;
+	line-height: 1.08;
+}
+
+.home-welcome__copy p {
+	max-width: 880px;
+	margin-bottom: 0;
+	color: #65708a;
+	font-size: 15px;
+	line-height: 1.85;
+}
+
+.home-welcome__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-bottom: 24px;
+}
+
+.home-welcome__secondary {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 158px;
+	height: 48px;
+	padding: 0 18px;
+	border-radius: 999px;
+	border: 1px solid #d8dfeb;
+	background: #ffffff;
+	color: #20243d;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.home-welcome__secondary:hover {
+	background: #20243d;
+	border-color: #20243d;
+	color: #ffffff;
+}
+
+.home-welcome__stats {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 16px;
+}
+
+.home-welcome__stat {
+	padding: 18px 20px;
+	border-radius: 22px;
+	background: rgba(255, 255, 255, 0.82);
+	border: 1px solid #ebedf4;
+	box-shadow: 0 14px 28px rgba(33, 40, 74, 0.06);
+}
+
+.home-welcome__stat strong {
+	display: block;
+	margin-bottom: 8px;
+	color: #20243d;
+	font-size: 24px;
+	font-weight: 900;
+}
+
+.home-welcome__stat span {
+	display: block;
+	color: #727b91;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.brand-marquee-section {
+	position: relative;
+	padding: 85px 0 74px;
+	overflow: hidden;
+	background: linear-gradient(135deg, #101010 0%, #1d1d1d 45%, #162330 100%);
+}
+
+.brand-marquee-section--compact {
+	padding: 34px 0 26px;
+}
+
+.brand-marquee-section:before {
+	position: absolute;
+	left: -120px;
+	top: -120px;
+	width: 320px;
+	height: 320px;
+	border-radius: 50%;
+	background: rgba(229, 54, 55, 0.12);
+	content: "";
+	filter: blur(12px);
+}
+
+.brand-marquee-section:after {
+	position: absolute;
+	right: -120px;
+	bottom: -140px;
+	width: 360px;
+	height: 360px;
+	border-radius: 50%;
+	background: rgba(216, 147, 67, 0.16);
+	content: "";
+	filter: blur(10px);
+}
+
+.brand-marquee-section .container {
+	position: relative;
+	z-index: 2;
+}
+
+.brand-marquee-section__header {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	gap: 30px;
+	margin-bottom: 32px;
+}
+
+.brand-marquee-section .section-title {
+	margin-bottom: 0;
+	text-align: left;
+}
+
+.brand-marquee-section .section-title span {
+	color: #f0b56a;
+}
+
+.brand-marquee-section .section-title h2,
+.brand-marquee-section__header p,
+.brand-marquee-section__stat span {
+	color: #ffffff;
+}
+
+.brand-marquee-section__header p {
+	max-width: 430px;
+	margin-bottom: 0;
+	color: rgba(255, 255, 255, 0.78);
+}
+
+.brand-marquee-section__stats {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 18px;
+	margin-bottom: 34px;
+}
+
+.brand-marquee-section__stats--bottom {
+	margin-top: 34px;
+	margin-bottom: 0;
+}
+
+.store-snapshot-section {
+	padding: 0 0 74px;
+}
+
+.store-snapshot-section__lead {
+	max-width: 720px;
+	margin: -14px auto 34px;
+	text-align: center;
+	font-size: 15px;
+	line-height: 1.8;
+	color: #5f5f5f;
+}
+
+.store-overview__hero {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 26px;
+	margin-bottom: 30px;
+	padding: 28px 30px;
+	border-radius: 28px;
+	background: linear-gradient(135deg, #f9fafc 0%, #eef3fb 100%);
+	border: 1px solid #ebedf4;
+	box-shadow: 0 20px 46px rgba(33, 40, 74, 0.08);
+}
+
+.store-overview__identity {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	flex: 1 1 auto;
+}
+
+.store-overview__logo {
+	display: block;
+	width: 170px;
+	height: auto;
+	flex: 0 0 auto;
+	border-radius: 22px;
+	box-shadow: 0 18px 34px rgba(0, 0, 0, 0.16);
+}
+
+.store-overview__copy span {
+	display: block;
+	margin-bottom: 12px;
+	color: #e29a3d;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+.store-overview__copy h2 {
+	margin: 0 0 10px;
+	color: #20243d;
+	font-size: 38px;
+	font-weight: 900;
+	line-height: 1.08;
+}
+
+.store-overview__copy .store-snapshot-section__lead {
+	max-width: 740px;
+	margin: 0;
+	text-align: left;
+	color: #667089;
+}
+
+.store-overview__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	flex: 0 0 auto;
+}
+
+.store-overview__secondary {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 152px;
+	height: 48px;
+	padding: 0 18px;
+	border-radius: 999px;
+	border: 1px solid #d7ddea;
+	background: #ffffff;
+	color: #20243d;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.store-overview__secondary:hover {
+	background: #20243d;
+	border-color: #20243d;
+	color: #ffffff;
+}
+
+.store-snapshot-section .brand-marquee-section__stat {
+	background: #111111;
+	border-color: #111111;
+	box-shadow: 0 20px 36px rgba(17, 17, 17, 0.1);
+}
+
+.store-snapshot-section .brand-marquee-section__stat strong,
+.store-snapshot-section .brand-marquee-section__stat span {
+	color: #ffffff;
+}
+
+.store-snapshot-section .brand-marquee-section__stat span {
+	color: rgba(255, 255, 255, 0.74);
+}
+
+.brand-marquee-section__stat {
+	padding: 20px 22px;
+	border-radius: 22px;
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	backdrop-filter: blur(10px);
+}
+
+.brand-marquee-section__stat strong {
+	display: block;
+	font-size: 24px;
+	line-height: 1.2;
+	font-weight: 800;
+	color: #ffffff;
+	margin-bottom: 6px;
+}
+
+.brand-marquee-section__stat span {
+	display: block;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.18em;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.brand-marquee {
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	padding: 8px 0 0;
+}
+
+.brand-marquee__track {
+	display: flex;
+	align-items: center;
+	width: max-content;
+	animation: brandMarqueeMove 26s linear infinite;
+}
+
+.brand-marquee__track:hover {
+	animation-play-state: paused;
+}
+
+.brand-marquee__item {
+	display: inline-flex;
+	align-items: center;
+	gap: 14px;
+	margin: 0 10px;
+	padding: 14px 16px;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	box-shadow: 0 18px 30px rgba(0, 0, 0, 0.16);
+	color: #ffffff;
+	transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.brand-marquee__item:hover {
+	transform: translateY(-4px);
+	background: rgba(255, 255, 255, 0.16);
+	color: #ffffff;
+}
+
+.brand-marquee__logo {
+	display: block;
+	width: 214px;
+	height: 64px;
+}
+
+.brand-marquee__logo img,
+.brand-marquee__logo svg {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.brand-marquee__wordmark {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	padding: 0 16px;
+	border-radius: 18px;
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid color-mix(in srgb, var(--brand-accent) 45%, rgba(255, 255, 255, 0.18));
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 900;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+.brand-marquee__fade {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 10%;
+	z-index: 3;
+	pointer-events: none;
+}
+
+.brand-marquee__fade--left {
+	left: 0;
+	background: linear-gradient(90deg, #111111 0%, rgba(17, 17, 17, 0) 100%);
+}
+
+.brand-marquee__fade--right {
+	right: 0;
+	background: linear-gradient(270deg, #162330 0%, rgba(22, 35, 48, 0) 100%);
+}
+
+@keyframes brandMarqueeMove {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.hero__text--brand h2 {
+		font-size: 48px;
+	}
+
+	.hero__brand__card__copy h3 {
+		font-size: 24px;
+	}
+
+	.home-welcome__stats {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.brand-marquee-section__stats {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.hero__items--brand {
+		padding-top: 150px;
+	}
+
+	.hero__brand-shell .col-lg-6:first-child {
+		margin-bottom: 28px;
+	}
+
+	.hero__brand__media {
+		padding-left: 0;
+	}
+
+	.home-welcome__identity {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.home-welcome__stats {
+		grid-template-columns: 1fr;
+	}
+
+	.store-overview__hero,
+	.store-overview__identity {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.store-overview__actions {
+		width: 100%;
+	}
+
+	.brand-marquee-section__header {
+		display: block;
+	}
+
+	.brand-marquee-section .section-title {
+		text-align: center;
+		margin-bottom: 12px;
+	}
+
+	.brand-marquee-section__header p {
+		max-width: none;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.hero__items--brand {
+		padding: 132px 0 74px;
+	}
+
+	.hero__text--brand h2 {
+		font-size: 38px;
+		line-height: 1.08;
+	}
+
+	.hero__brand__card--main {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.hero__brand__card--main img {
+		width: 100%;
+	}
+
+	.hero__brand__thumbs {
+		grid-template-columns: 1fr;
+	}
+
+	.home-welcome {
+		padding: 24px;
+	}
+
+	.home-welcome__copy h2 {
+		font-size: 34px;
+	}
+
+	.brand-marquee-section {
+		padding: 68px 0 56px;
+	}
+
+	.brand-marquee-section--compact {
+		padding: 24px 0 18px;
+	}
+
+	.brand-marquee-section__stats {
+		gap: 12px;
+	}
+
+	.brand-marquee__item {
+		margin: 0 8px;
+		padding: 14px 18px;
+	}
+
+	.brand-marquee__logo {
+		width: 180px;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.hero__brand__actions,
+	.home-welcome__actions {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.hero__brand__logo svg {
+		width: 188px;
+	}
+
+	.hero__brand__thumb {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.home-welcome__logo {
+		width: 150px;
+	}
+
+	.home-welcome__copy h2 {
+		font-size: 30px;
+	}
+
+	.brand-marquee-section__stats {
+		grid-template-columns: 1fr;
+	}
+
+	.store-snapshot-section__lead {
+		font-size: 14px;
+		margin-top: -8px;
+	}
+
+	.store-overview__hero {
+		padding: 22px;
+	}
+
+	.store-overview__logo {
+		width: 138px;
+	}
+
+	.store-overview__copy h2 {
+		font-size: 30px;
+	}
+
+	.brand-marquee__logo {
+		width: 168px;
+	}
+}
+
+.homeeliance-home {
+	padding: 28px 0 86px;
+	background: #f7f8fc;
+}
+
+.homeeliance-shelf,
+.homeeliance-split,
+.homeeliance-highlight {
+	padding: 22px 0;
+}
+
+.homeeliance-shelf--first {
+	padding-top: 10px;
+}
+
+.homeeliance-heading {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	gap: 20px;
+	margin-bottom: 22px;
+}
+
+.homeeliance-heading--inner {
+	margin-bottom: 18px;
+}
+
+.homeeliance-heading h2 {
+	margin: 0;
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 1.12;
+	color: #20243d;
+}
+
+.homeeliance-heading a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 124px;
+	height: 40px;
+	padding: 0 16px;
+	border-radius: 999px;
+	background: #edf3ff;
+	color: #4976eb;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.homeeliance-heading a:hover {
+	background: #4976eb;
+	color: #ffffff;
+}
+
+.homeeliance-kicker {
+	display: inline-block;
+	margin-bottom: 8px;
+	color: #f44f59;
+	font-size: 11px;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+.homeeliance-grid {
+	display: grid;
+	gap: 18px;
+}
+
+.homeeliance-grid--five {
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.homeeliance-grid--four {
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.homeeliance-grid--single {
+	grid-template-columns: minmax(0, 1fr);
+}
+
+/* Custom Scrollbar Styling */
+.homeeliance-grid::-webkit-scrollbar {
+	width: 8px;
+}
+
+.homeeliance-grid::-webkit-scrollbar-track {
+	background: #f5f5f5;
+	border-radius: 10px;
+}
+
+.homeeliance-grid::-webkit-scrollbar-thumb {
+	background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.homeeliance-grid::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(180deg, #5568d9 0%, #653a91 100%);
+}
+
+/* Kitchen Split Section - No scrollbar */
+.homeeliance-split .row {
+
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+}
+
+.homeeliance-card {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	border-radius: 18px;
+	background: #ffffff;
+	border: 1px solid #ebedf4;
+	box-shadow: 0 18px 42px rgba(33, 40, 74, 0.08);
+	overflow: hidden;
+}
+
+.homeeliance-card__media {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 188px;
+	padding: 18px;
+	background: linear-gradient(180deg, #fbfcff 0%, #f3f5fb 100%);
+}
+
+.homeeliance-card__media img {
+	display: block;
+	max-width: 100%;
+	max-height: 148px;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+}
+
+.homeeliance-card__badge {
+	position: absolute;
+	left: 14px;
+	top: 14px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 24px;
+	padding: 0 10px;
+	border-radius: 999px;
+	background: #ef4e54;
+	color: #ffffff;
+	font-size: 10px;
+	font-weight: 800;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.homeeliance-card__body {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	padding: 16px 16px 18px;
+}
+
+.homeeliance-card__brand {
+	display: block;
+	margin-bottom: 8px;
+	color: #8e96ae;
+	font-size: 11px;
+	font-weight: 800;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+}
+
+.homeeliance-card__title {
+	margin: 0 0 7px;
+	min-height: 40px;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 1.4;
+}
+
+.homeeliance-card__title a {
+	color: #20243d;
+}
+
+.homeeliance-card__title a:hover {
+	color: #4976eb;
+}
+
+.homeeliance-card__meta-copy {
+	margin-bottom: 10px;
+	color: #7d849a;
+	font-size: 12px;
+	line-height: 1.45;
+}
+
+.homeeliance-card__meta {
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
+.homeeliance-card__price {
+	color: #ef4e54;
+	font-size: 17px;
+	font-weight: 900;
+	line-height: 1.2;
+}
+
+.homeeliance-card__price--old {
+	color: #a0a7bc;
+	font-size: 12px;
+	font-weight: 700;
+	text-decoration: line-through;
+}
+
+.homeeliance-card__saving {
+	margin-bottom: 14px;
+	color: #6f768b;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.homeeliance-card__buttons {
+	display: grid;
+	gap: 8px;
+	margin-top: auto;
+}
+
+.homeeliance-card__btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 38px;
+	border-radius: 10px;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.homeeliance-card__btn:hover {
+	color: #ffffff;
+	transform: translateY(-1px);
+}
+
+.homeeliance-card__btn--red {
+	background: #ef4e54;
+}
+
+.homeeliance-card__btn--green {
+	background: #22bf67;
+}
+
+.homeeliance-split .row,
+.homeeliance-highlight__shell {
+	align-items: stretch;
+	gap: 12px;
+}
+
+.homeeliance-kitchen-ad {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	min-height: 498px;
+	padding: 18px;
+	border-radius: 26px;
+	background: linear-gradient(145deg, #fff7f2 0%, #ffffff 54%, #eef3fb 100%);
+	border: 1px solid #ebedf4;
+	box-shadow: 0 20px 46px rgba(33, 40, 74, 0.1);
+	overflow: hidden;
+}
+
+.homeeliance-kitchen-ad__content {
+	position: relative;
+	z-index: 2;
+}
+
+.homeeliance-kitchen-ad__content h2 {
+	margin: 0 0 12px;
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 1.08;
+	color: #20243d;
+}
+
+.homeeliance-kitchen-ad__content p {
+	margin-bottom: 16px;
+	color: #70788f;
+	font-size: 14px;
+	line-height: 1.75;
+}
+
+.homeeliance-kitchen-ad__meta {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-bottom: 18px;
+}
+
+.homeeliance-kitchen-ad__meta span {
+	color: #8a92a8;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.homeeliance-kitchen-ad__meta strong {
+	color: #ef4e54;
+	font-size: 24px;
+	font-weight: 900;
+	line-height: 1.2;
+}
+
+.homeeliance-kitchen-ad__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 156px;
+	height: 44px;
+	padding: 0 18px;
+	border-radius: 999px;
+	background: #20243d;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.homeeliance-kitchen-ad__link:hover {
+	background: #ef4e54;
+	color: #ffffff;
+}
+
+.homeeliance-kitchen-ad__visual {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 16px;
+}
+
+.homeeliance-kitchen-ad__visual img {
+	display: block;
+	max-width: 100%;
+	width: 100%;
+	height: 260px;
+	border-radius: 22px;
+	object-fit: cover;
+	box-shadow: 0 20px 30px rgba(33, 40, 74, 0.12);
+}
+
+.homeeliance-story {
+	position: relative;
+	min-height: 100%;
+	border-radius: 26px;
+	overflow: hidden;
+	background-color: #dde2ec;
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0 20px 46px rgba(33, 40, 74, 0.1);
+}
+
+.homeeliance-story:before {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(180deg, rgba(13, 15, 24, 0.04) 0%, rgba(13, 15, 24, 0.68) 100%);
+	content: "";
+}
+
+.homeeliance-story--tall {
+	min-height: 498px;
+}
+
+.homeeliance-story--wide {
+	min-height: 100%;
+}
+
+.homeeliance-story__content,
+.homeeliance-story__panel {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	min-height: 100%;
+	padding: 30px;
+	color: #ffffff;
+}
+
+.homeeliance-story__content span,
+.homeeliance-story__panel span {
+	display: inline-block;
+	margin-bottom: 12px;
+	font-size: 11px;
+	font-weight: 800;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+.homeeliance-story__content h2,
+.homeeliance-story__panel h2 {
+	margin: 0 0 12px;
+	color: #ffffff;
+	font-size: 34px;
+	font-weight: 900;
+	line-height: 1.08;
+}
+
+.homeeliance-story__content p,
+.homeeliance-story__panel p {
+	margin-bottom: 18px;
+	color: rgba(255, 255, 255, 0.86);
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+.homeeliance-story__content a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 150px;
+	height: 42px;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.16);
+	border: 1px solid rgba(255, 255, 255, 0.28);
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.homeeliance-story__content a:hover {
+	background: #ffffff;
+	color: #20243d;
+}
+
+.homeeliance-highlight__shell {
+	display: grid;
+	grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+	gap: 28px;
+	padding: 26px;
+	border-radius: 28px;
+	background: #ffffff;
+	border: 1px solid #ebedf4;
+	box-shadow: 0 20px 46px rgba(33, 40, 74, 0.08);
+}
+
+.homeeliance-highlight__media {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 0;
+}
+
+.homeeliance-highlight__media > img {
+	display: block;
+	width: 100%;
+	height: 380px;
+	border-radius: 22px;
+	background: linear-gradient(180deg, #fbfcff 0%, #f2f5fb 100%);
+	object-fit: cover;
+}
+
+.homeeliance-mini-grid--hidden {
+	display: none;
+}
+
+.homeeliance-highlight__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.homeeliance-highlight__content h2 {
+	margin: 0 0 12px;
+	font-size: 42px;
+	font-weight: 900;
+	line-height: 1.05;
+	color: #20243d;
+}
+
+.homeeliance-highlight__content p {
+	max-width: 470px;
+	margin-bottom: 18px;
+	color: #7a8197;
+	font-size: 15px;
+	line-height: 1.8;
+}
+
+.homeeliance-chip-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.homeeliance-chip-list span {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 34px;
+	padding: 0 14px;
+	border-radius: 999px;
+	background: #f2f5fb;
+	color: #52607d;
+	font-size: 11px;
+	font-weight: 800;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.homeeliance-mini-grid {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	gap: 14px;
+	margin-top: 18px;
+}
+
+.homeeliance-mini-card {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 12px;
+	min-height: 106px;
+	border-radius: 18px;
+	background: #ffffff;
+	border: 1px solid #ebedf4;
+	box-shadow: 0 14px 32px rgba(33, 40, 74, 0.06);
+}
+
+.homeeliance-mini-card__media {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 78px;
+	height: 78px;
+	flex: 0 0 78px;
+	padding: 8px;
+	border-radius: 16px;
+	background: #f5f7fb;
+}
+
+.homeeliance-mini-card__media img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+}
+
+.homeeliance-mini-card__body {
+	min-width: 0;
+}
+
+.homeeliance-mini-card__brand {
+	display: block;
+	margin-bottom: 6px;
+	color: #9aa1b5;
+	font-size: 10px;
+	font-weight: 800;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+}
+
+.homeeliance-mini-card__body h3 {
+	margin: 0 0 8px;
+	font-size: 13px;
+	font-weight: 800;
+	line-height: 1.4;
+}
+
+.homeeliance-mini-card__body h3 a {
+	color: #20243d;
+}
+
+.homeeliance-mini-card__body h3 a:hover {
+	color: #4976eb;
+}
+
+.homeeliance-mini-card__meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px 10px;
+	color: #6f768b;
+	font-size: 11px;
+	font-weight: 700;
+}
+
+.homeeliance-mini-card__meta span:first-child {
+	color: #ef4e54;
+}
+
+.homeeliance-smart-edit {
+	padding: 22px 0 10px;
+}
+
+.homeeliance-smart-promo {
+	padding: 34px 38px;
+	border-radius: 30px;
+	background: linear-gradient(180deg, #f9f9fb 0%, #f2f4f8 100%);
+	border: 1px solid #ebedf4;
+	box-shadow: 0 20px 46px rgba(33, 40, 74, 0.08);
+}
+
+.homeeliance-smart-promo__top {
+	display: grid;
+	grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+	gap: 32px;
+	align-items: center;
+}
+
+.homeeliance-smart-promo__visual {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.homeeliance-smart-promo__poster {
+	display: block;
+	width: 100%;
+	max-width: 640px;
+	height: 420px;
+	border-radius: 28px;
+	object-fit: cover;
+	box-shadow: 0 24px 44px rgba(33, 40, 74, 0.14);
+}
+
+.homeeliance-smart-promo__content h2 {
+	margin: 0 0 14px;
+	font-size: 48px;
+	font-weight: 900;
+	line-height: 1.04;
+	color: #20243d;
+}
+
+.homeeliance-smart-promo__content p {
+	max-width: 500px;
+	margin-bottom: 18px;
+	color: #6f778e;
+	font-size: 16px;
+	line-height: 1.8;
+}
+
+.homeeliance-smart-promo__meta {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-bottom: 20px;
+}
+
+.homeeliance-smart-promo__meta span {
+	color: #8a92a8;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.homeeliance-smart-promo__meta strong {
+	color: #ef4e54;
+	font-size: 24px;
+	font-weight: 900;
+	line-height: 1.2;
+}
+
+.homeeliance-smart-promo__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-bottom: 18px;
+}
+
+.homeeliance-smart-promo__btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 156px;
+	height: 44px;
+	padding: 0 18px;
+	border-radius: 12px;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.homeeliance-smart-promo__btn--primary {
+	background: #ef4e54;
+	color: #ffffff;
+}
+
+.homeeliance-smart-promo__btn--primary:hover {
+	background: #20243d;
+	color: #ffffff;
+}
+
+.homeeliance-smart-promo__btn--secondary {
+	background: #ffffff;
+	border: 1px solid #d9dfeb;
+	color: #20243d;
+}
+
+.homeeliance-smart-promo__btn--secondary:hover {
+	background: #20243d;
+	border-color: #20243d;
+	color: #ffffff;
+}
+
+.homeeliance-smart-promo__cards {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	gap: 18px;
+	margin-top: 26px;
+}
+
+.homeeliance-smart-card {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	min-height: 110px;
+	padding: 14px 16px;
+	border-radius: 18px;
+	background: #ffffff;
+	box-shadow: 0 12px 28px rgba(33, 40, 74, 0.06);
+}
+
+.homeeliance-smart-card:hover {
+	transform: translateY(-2px);
+}
+
+.homeeliance-smart-card__image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 74px;
+	height: 74px;
+	flex: 0 0 74px;
+	padding: 10px;
+	border-radius: 16px;
+	background: #f6f8fc;
+}
+
+.homeeliance-smart-card__image img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+}
+
+.homeeliance-smart-card__body {
+	min-width: 0;
+}
+
+.homeeliance-smart-card__body small {
+	display: block;
+	margin-bottom: 6px;
+	color: #9ca4b8;
+	font-size: 10px;
+	font-weight: 800;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+}
+
+.homeeliance-smart-card__body strong {
+	display: block;
+	margin-bottom: 8px;
+	color: #20243d;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 1.35;
+}
+
+.homeeliance-smart-card__price {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px 10px;
+	align-items: center;
+}
+
+.homeeliance-smart-card__price em {
+	color: #a5acc0;
+	font-size: 12px;
+	font-style: normal;
+	text-decoration: line-through;
+}
+
+.homeeliance-smart-card__price b {
+	color: #ef4e54;
+	font-size: 14px;
+	font-weight: 900;
+}
+
+.homeeliance-smart-showcase {
+	display: grid;
+	grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+	gap: 26px;
+	height: 100%;
+	padding: 26px;
+	border-radius: 28px;
+	background: linear-gradient(135deg, #fbfbfd 0%, #eef2f8 100%);
+	border: 1px solid #ebedf4;
+	box-shadow: 0 20px 46px rgba(33, 40, 74, 0.08);
+}
+
+.homeeliance-smart-showcase__visual {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 132px;
+	gap: 14px;
+	align-items: stretch;
+}
+
+.homeeliance-smart-showcase__hero,
+.homeeliance-smart-showcase__stack img {
+	display: block;
+	width: 100%;
+	background: #ffffff;
+	object-fit: contain;
+	box-shadow: 0 16px 32px rgba(33, 40, 74, 0.08);
+}
+
+.homeeliance-smart-showcase__hero {
+	height: 294px;
+	padding: 20px;
+	border-radius: 26px;
+}
+
+.homeeliance-smart-showcase__stack {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 14px;
+}
+
+.homeeliance-smart-showcase__stack img {
+	height: 140px;
+	padding: 14px;
+	border-radius: 20px;
+}
+
+.homeeliance-smart-showcase__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.homeeliance-smart-showcase__content h2 {
+	margin: 0 0 12px;
+	font-size: 38px;
+	font-weight: 900;
+	line-height: 1.05;
+	color: #20243d;
+}
+
+.homeeliance-smart-showcase__content p {
+	max-width: 420px;
+	margin-bottom: 18px;
+	color: #747b90;
+	font-size: 15px;
+	line-height: 1.8;
+}
+
+.homeeliance-smart-showcase__meta {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-bottom: 18px;
+}
+
+.homeeliance-smart-showcase__meta span {
+	color: #8a92a8;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.homeeliance-smart-showcase__meta strong {
+	color: #ef4e54;
+	font-size: 24px;
+	font-weight: 900;
+	line-height: 1.2;
+}
+
+.homeeliance-smart-showcase__cta {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 150px;
+	height: 44px;
+	padding: 0 18px;
+	margin-bottom: 18px;
+	border-radius: 999px;
+	background: #ef4e54;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.homeeliance-smart-showcase__cta:hover {
+	background: #20243d;
+	color: #ffffff;
+}
+
+.homeeliance-smart-showcase__tabs {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 12px;
+	margin-top: 16px;
+}
+
+.homeeliance-smart-showcase__tab {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px;
+	border-radius: 18px;
+	background: #ffffff;
+	box-shadow: 0 12px 28px rgba(33, 40, 74, 0.06);
+}
+
+.homeeliance-smart-showcase__tab:hover {
+	transform: translateY(-2px);
+}
+
+.homeeliance-smart-showcase__tab-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	flex: 0 0 60px;
+	padding: 8px;
+	border-radius: 16px;
+	background: #f6f8fc;
+}
+
+.homeeliance-smart-showcase__tab-image img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+}
+
+.homeeliance-smart-showcase__tab-copy {
+	display: block;
+	min-width: 0;
+}
+
+.homeeliance-smart-showcase__tab-copy strong {
+	display: block;
+	margin-bottom: 4px;
+	color: #20243d;
+	font-size: 12px;
+	font-weight: 800;
+	line-height: 1.45;
+}
+
+.homeeliance-smart-showcase__tab-copy small {
+	display: block;
+	color: #8d95ab;
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+#store-snapshot .homeeliance-grid--single {
+	height: 100%;
+}
+
+#store-snapshot .homeeliance-card {
+	min-height: 100%;
+}
+
+#store-snapshot .homeeliance-card__media {
+	min-height: 230px;
+}
+
+@media only screen and (max-width: 1199px) {
+	.homeeliance-grid--five {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.homeeliance-grid--four {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.homeeliance-mini-grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.homeeliance-smart-showcase__tabs {
+		grid-template-columns: 1fr;
+	}
+
+	.homeeliance-smart-promo__cards {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.homeeliance-heading,
+	.homeeliance-heading--inner {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.homeeliance-split .col-lg-4,
+	.homeeliance-split .col-lg-8 {
+		margin-bottom: 20px;
+	}
+
+	.homeeliance-story--tall {
+		min-height: 380px;
+	}
+
+	.homeeliance-highlight__shell {
+		grid-template-columns: 1fr;
+	}
+
+	.homeeliance-highlight__content h2 {
+		font-size: 34px;
+	}
+
+	.homeeliance-mini-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.homeeliance-kitchen-ad {
+		min-height: 0;
+		margin-bottom: 20px;
+	}
+
+	.homeeliance-smart-promo {
+		padding: 28px;
+	}
+
+	.homeeliance-smart-promo__top {
+		grid-template-columns: 1fr;
+	}
+
+	.homeeliance-smart-promo__content h2 {
+		font-size: 38px;
+	}
+
+	.homeeliance-smart-promo__cards {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.homeeliance-smart-showcase {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.homeeliance-home {
+		padding-bottom: 64px;
+	}
+
+	.homeeliance-grid--five,
+	.homeeliance-grid--four {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.homeeliance-heading h2,
+	.homeeliance-highlight__content h2,
+	.homeeliance-story__content h2,
+	.homeeliance-story__panel h2 {
+		font-size: 28px;
+	}
+
+	.homeeliance-highlight__shell {
+		padding: 20px;
+	}
+
+	.homeeliance-highlight__media > img {
+		height: 250px;
+	}
+
+	.homeeliance-card__media {
+		min-height: 164px;
+	}
+
+	.homeeliance-smart-showcase {
+		padding: 20px;
+	}
+
+	.homeeliance-smart-showcase__visual {
+		grid-template-columns: 1fr;
+	}
+
+	.homeeliance-smart-showcase__hero {
+		height: 240px;
+	}
+
+	.homeeliance-smart-showcase__stack {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.homeeliance-smart-showcase__content h2 {
+		font-size: 30px;
+	}
+
+	.homeeliance-smart-promo {
+		padding: 22px;
+	}
+
+	.homeeliance-smart-promo__content h2 {
+		font-size: 32px;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.homeeliance-grid--five,
+	.homeeliance-grid--four,
+	.homeeliance-mini-grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.homeeliance-card__title {
+		min-height: 0;
+	}
+
+	.homeeliance-highlight__thumbs {
+		grid-template-columns: 1fr;
+	}
+
+	.homeeliance-story__content,
+	.homeeliance-story__panel {
+		padding: 22px;
+	}
+
+	.homeeliance-smart-showcase__stack,
+	.homeeliance-smart-showcase__tabs {
+		grid-template-columns: 1fr;
+	}
+
+	.homeeliance-smart-promo__cards {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Home hero override: simple brand carousel with left copy and one image */
+.hero__items--brand {
+	display: flex;
+	align-items: center;
+	min-height: 720px;
+	padding: 180px 0 108px;
+}
+
+.hero__items--brand .container {
+	position: relative;
+	z-index: 2;
+}
+
+.hero__brand-shell {
+	padding: 50px 56px;
+	border-radius: 36px;
+	background: rgba(255, 255, 255, 0.56);
+	border: 1px solid rgba(255, 255, 255, 0.82);
+	box-shadow: 0 28px 70px rgba(23, 30, 54, 0.12);
+	backdrop-filter: blur(12px);
+}
+
+.hero__text--brand {
+	max-width: 580px;
+}
+
+.hero__text--brand h6 {
+	margin-bottom: 16px;
+	font-size: 13px;
+	font-weight: 800;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+.hero__text--brand h2 {
+	margin-bottom: 22px;
+	font-size: 58px;
+	font-weight: 800;
+	line-height: 1.04;
+}
+
+.hero__text--brand p {
+	margin-bottom: 18px;
+	max-width: 540px;
+	color: #57617a;
+	font-size: 17px;
+	line-height: 1.78;
+}
+
+.hero__brand__caption {
+	display: inline-flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 28px;
+	padding: 12px 18px;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(32, 36, 61, 0.08);
+	box-shadow: 0 16px 32px rgba(23, 30, 54, 0.08);
+	color: #5d6781;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.hero__brand__caption strong {
+	color: #20243d;
+	font-weight: 900;
+}
+
+.hero__brand__caption span {
+	color: var(--hero-accent);
+	font-weight: 900;
+}
+
+.hero__brand__actions {
+	margin-bottom: 0;
+}
+
+.hero__brand__actions .primary-btn {
+	box-shadow: 0 18px 32px rgba(216, 39, 39, 0.18);
+}
+
+.hero__brand__single {
+	position: relative;
+	padding: 26px;
+	border-radius: 34px;
+	background: linear-gradient(145deg, rgba(255, 255, 255, 0.94) 0%, rgba(244, 247, 252, 0.92) 100%);
+	border: 1px solid rgba(255, 255, 255, 0.88);
+	box-shadow: 0 28px 58px rgba(23, 30, 54, 0.14);
+	overflow: hidden;
+}
+
+.hero__brand__single:before {
+	position: absolute;
+	content: "";
+	right: -12px;
+	top: -18px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: color-mix(in srgb, var(--hero-accent) 18%, transparent);
+	filter: blur(4px);
+	opacity: 0.85;
+}
+
+.hero__brand__single__frame {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 410px;
+	padding: 34px;
+	border-radius: 28px;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(241, 244, 249, 0.96) 100%);
+	max-width: 100%;
+}
+
+.hero__brand__single__frame img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	min-height: 342px;
+	border-radius: 22px;
+	object-fit: cover;
+	filter: drop-shadow(0 22px 36px rgba(23, 30, 54, 0.12));
+	transition: transform 0.35s ease;
+}
+
+.hero__brand__single:hover .hero__brand__single__frame img {
+	transform: translateY(-6px) scale(1.02);
+}
+
+@media only screen and (max-width: 1199px) {
+	.hero__brand-shell {
+		padding: 42px 44px;
+	}
+
+	.hero__text--brand h2 {
+		font-size: 50px;
+	}
+
+	.hero__brand__single__frame {
+		min-height: 360px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.hero__items--brand {
+		min-height: 0;
+		padding: 152px 0 88px;
+	}
+
+	.hero__brand-shell {
+		padding: 34px;
+	}
+
+	.hero__brand-shell .col-lg-7 {
+		margin-bottom: 30px;
+	}
+
+	.hero__brand__single__frame {
+		min-height: 320px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.hero__items--brand {
+		padding: 132px 0 72px;
+	}
+
+	.hero__brand-shell {
+		padding: 24px;
+		border-radius: 28px;
+	}
+
+	.hero__text--brand h2 {
+		font-size: 38px;
+		line-height: 1.08;
+	}
+
+	.hero__text--brand p {
+		font-size: 15px;
+		line-height: 1.72;
+	}
+
+	.hero__brand__caption {
+		margin-bottom: 22px;
+		padding: 11px 16px;
+	}
+
+	.hero__brand__single {
+		padding: 18px;
+		border-radius: 26px;
+	}
+
+	.hero__brand__single__frame {
+		min-height: 280px;
+		padding: 22px;
+		border-radius: 22px;
+	}
+
+	.hero__brand__single__frame img {
+		max-height: 260px;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.hero__brand__caption {
+		display: block;
+		border-radius: 22px;
+	}
+
+	.hero__brand__caption span {
+		display: block;
+		margin-top: 6px;
+	}
+
+	.hero__brand__single__frame {
+		min-height: 240px;
+		padding: 18px;
+	}
+
+	.hero__brand__single__frame img {
+		max-height: 220px;
+	}
+}
+
+/* Home page spacing and slider polish */
+.home-welcome-section {
+	padding: 28px 0 56px;
+}
+
+.home-welcome {
+	padding: 40px 42px;
+}
+
+.hero__slider.owl-carousel .owl-stage-outer {
+	overflow: hidden;
+}
+
+.hero__slider.owl-carousel .owl-nav button {
+	z-index: 6;
+}
+
+@media only screen and (max-width: 767px) {
+	.home-welcome-section {
+		padding: 18px 0 42px;
+	}
+
+	.home-welcome {
+		padding: 28px 24px;
+	}
+}
+
+/* Home hero full-height layout */
+.hero {
+	position: relative;
+	min-height: calc(100vh - 118px);
+	overflow-x: hidden;
+	background: linear-gradient(180deg, #f7f9ff 0%, #eef3ff 100%);
+}
+
+.hero__slider,
+.hero__slider .owl-stage-outer,
+.hero__slider .owl-stage,
+.hero__slider .owl-item {
+	height: 100%;
+	min-height: calc(100vh - 118px);
+}
+
+.hero__slider {
+	overflow-x: hidden;
+}
+
+.hero__slider .owl-stage {
+	display: flex;
+}
+
+.hero__slider .owl-item {
+	display: flex;
+}
+
+.hero__items--brand {
+	min-height: calc(100vh - 118px);
+	padding: 72px 0 108px;
+}
+
+.hero__slider.owl-carousel .owl-nav button {
+	top: 50%;
+	margin-top: -18px;
+}
+
+.hero__scrollcue {
+	position: absolute;
+	left: 50%;
+	bottom: 28px;
+	z-index: 7;
+	transform: translateX(-50%);
+}
+
+.hero__scrollcue a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	color: #20243d;
+	font-size: 11px;
+	font-weight: 800;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+.hero__scrollcue i {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 42px;
+	height: 42px;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.92);
+	box-shadow: 0 18px 34px rgba(33, 40, 74, 0.12);
+	animation: heroScrollBounce 1.7s infinite;
+}
+
+@keyframes heroScrollBounce {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(8px);
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.hero,
+	.hero__slider,
+	.hero__slider .owl-stage-outer,
+	.hero__slider .owl-stage,
+	.hero__slider .owl-item,
+	.hero__items--brand {
+		min-height: calc(100vh - 96px);
+	}
+
+	.hero__items--brand {
+		padding: 56px 0 96px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.hero,
+	.hero__slider,
+	.hero__slider .owl-stage-outer,
+	.hero__slider .owl-stage,
+	.hero__slider .owl-item,
+	.hero__items--brand {
+		min-height: calc(100vh - 84px);
+	}
+
+	.hero__items--brand {
+		padding: 40px 0 88px;
+	}
+
+	.hero__scrollcue {
+		bottom: 18px;
+	}
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+.hero,
+.brand-marquee-section,
+.home-welcome-section,
+.homeeliance-home,
+.store-snapshot-section {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.hero__items--brand .container,
+.brand-marquee-section .container,
+.home-welcome-section .container,
+.homeeliance-home .container,
+.store-snapshot-section .container {
+	width: 100%;
+	max-width: 1280px;
+}
+
+.hero__brand-shell {
+	width: 100%;
+	padding: 50px 44px;
+}
+
+.hero__brand-shell .row {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.hero__brand-shell .col-lg-7,
+.hero__brand-shell .col-lg-5 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.hero__brand__single {
+	max-width: 500px;
+	margin-left: auto;
+}
+
+@media only screen and (max-width: 1199px) {
+	.hero__items--brand .container,
+	.brand-marquee-section .container,
+	.home-welcome-section .container,
+	.homeeliance-home .container,
+	.store-snapshot-section .container {
+		max-width: 1140px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.hero__brand-shell .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.hero__brand-shell .col-lg-7,
+	.hero__brand-shell .col-lg-5 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.hero__brand__single {
+		max-width: 100%;
+		margin-left: 0;
+	}
+}
+
+.hero__slider.owl-carousel,
+.hero__slider.owl-carousel .owl-stage-outer {
+	width: 100%;
+}
+
+.hero__slider .owl-stage {
+	display: block;
+}
+
+.hero__slider .owl-item {
+	display: block;
+	float: left;
+}
+
+.hero__items--brand,
+.hero__brand-shell {
+	width: 100%;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Emoji Test</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .test-item { padding: 15px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; }
+        .emoji { font-size: 24px; margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>Emoji Heart Display Test</h1>
+
+<div class="test-item">
+    <span class="emoji">❤️</span> <strong>Favorited (Red Filled Heart)</strong> - Should be visible above
+</div>
+
+<div class="test-item">
+    <span class="emoji">🤍</span> <strong>Not Favorited (White Heart)</strong> - Should be visible above
+</div>
+
+<div class="test-item">
+    <h3>Quick Links to Test Favorites:</h3>
+    <ul>
+        <li><a href="./shop.php">Go to Shop - Look for heart emojis on products</a></li>
+        <li><a href="./test-favorites.php">Favorites Test Page</a></li>
+    </ul>
+</div>
+
+<div class="test-item">
+    <h3>Debug Info:</h3>
+    <p>If you see the red ❤️ and white 🤍 hearts above, then emojis are rendering correctly.</p>
+    <p>If you don't see them, there's a character encoding issue.</p>
+</div>
+
+</body>
+</html>

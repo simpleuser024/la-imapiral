@@ -1,0 +1,8 @@
+{
+  "name": "la-imparial/storefront",
+  "description": "La Imparial appliance storefront with Google OAuth login integration.",
+  "type": "project",
+  "require": {
+    "google/apiclient": "^2.15"
+  }
+}

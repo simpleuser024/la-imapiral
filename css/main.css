@@ -1,0 +1,25 @@
+body {
+	margin: 0;
+	font-family: "Nunito Sans", Arial, sans-serif;
+	background: #ffffff;
+	color: #111111;
+}
+
+img {
+	margin: 0 auto;
+	display: block;
+	margin-top: 20%;
+}
+
+h1,
+p {
+	text-align: center;
+}
+
+p {
+	line-height: 1.7;
+}
+
+.main-alert {
+	color: #d62828;
+}
